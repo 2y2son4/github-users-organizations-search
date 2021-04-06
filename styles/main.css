@@ -91,6 +91,36 @@
   border-left: #238636 3px solid;
   padding-left: 50px;
 }
+/* footer */
+
+.footer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-share {
+  /* position: absolute; */
+  bottom: 20px;
+  border: 1px solid #238636;
+  border-radius: 0.5rem;
+  background: #238636;
+  margin: 20px;
+  padding-bottom: 3px;
+}
+.btn-share:hover {
+  transform: scale(1.1);
+  border-color: #238636;
+  box-shadow: 0 0 0.5rem #238636;
+}
+
+.link-share {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  background-color: #238636;
+  text-shadow: 0 0 0.5rem black;
+}
 
 @media all and (max-width: 780px) {
   .body {
