@@ -23,7 +23,7 @@ function getGitHubUser() {
       urlElement2.href = data.html_url;
       urlElement2.target = '_blank';
       img2.src = data.avatar_url;
-      img2.alt = 'Avatar';
+      img2.alt = `${data.name}'s avatar`;
       repoElement2.innerHTML = data.public_repos + '.';
       followersElement.innerHTML = data.followers + '.';
       followingElement.innerHTML = data.following + '.';
