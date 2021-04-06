@@ -62,12 +62,23 @@
 .link:hover {
   border-bottom: 1px #58a6ff solid;
 }
+.link__twitter {
+  color: #00acee;
+  text-decoration: none;
+}
+.link__twitter:hover {
+  border-bottom: 1px #00acee solid;
+}
+
 .paragraph {
   font-weight: 400;
 }
 .img {
   width: 150px;
   border-radius: 25%;
+}
+.twitter {
+  color: #00acee;
 }
 
 .users {
