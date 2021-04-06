@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/696abec2fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <title>GitHub users and organization browser</title>
   </head>
   <body>
-    <header class="header"><h1 class="title">GitHub browser</h1></header>
+    <header class="header">
+      <h1 class="title">
+        GitHub browser
+        <a class="title__link" href="https://github.com/" title="Go to GitHub main page"
+          ><i class="title__link fab fa-github"></i
+        ></a>
+      </h1>
+    </header>
     <div class="body">
       <section class="sections users">
-        <h2 class="title__section">Users</h2>
+        <h2 class="title__section"><i class="far fa-address-card"></i> Users</h2>
         <form class="container-input js-form2">
           <input type="text" class="js-input2 input" placeholder="i.e: 2y2son4" />
           <button class="js-btn2 btn">Search</button>
@@ -28,7 +36,7 @@
         </div>
       </section>
       <section class="sections organizations">
-        <h2 class="title__section">Organizations</h2>
+        <h2 class="title__section"><i class="far fa-clipboard"></i> Organizations</h2>
         <form class="container-input js-form">
           <input type="text" class="js-input input" placeholder="i.e: Adalab" />
           <button class="js-btn btn">Search</button>
