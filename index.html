@@ -7,5 +7,40 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <title>GitHub users and organization browser</title>
   </head>
-  <body class="body"></body>
+  <body class="body">
+    <section class="users">
+      <h2 class="title">GitHub users</h2>
+      <form class="container-input js-form2">
+        <input type="text" class="js-input2 input" placeholder="i.e: 2y2son4" />
+        <button class="js-btn2 btn">Search</button>
+      </form>
+      <div class="js-results2 container-results">
+        <p class="paragraph">User name: <span class="js-user-result2 normal"></span></p>
+        <p class="paragraph">Name: <span class="js-name-result2 normal"></span></p>
+        <p class="paragraph">URL: <a class="js-url-result2 normal link"></a></p>
+        <p class="paragraph">Avatar:</p>
+        <img src="" alt="" class="js-img2 img" />
+        <p class="paragraph">Number of repositories: <span class="js-repo-result2 normal"></span></p>
+        <p class="paragraph">Followers: <span class="js-followers-result2 normal"></span></p>
+        <p class="paragraph">Following: <span class="js-following-result2 normal"></span></p>
+      </div>
+    </section>
+
+    <section class="organizations">
+      <h2 class="title">GitHub organizations</h2>
+      <form class="container-input js-form">
+        <input type="text" class="js-input input" placeholder="i.e: Adalab" />
+        <button class="js-btn btn">Search</button>
+      </form>
+      <div class="js-results container-results">
+        <p class="paragraph">Organization name: <span class="js-org-result normal"></span></p>
+        <p class="paragraph">URL: <a class="js-url-result normal link"></a></p>
+        <p class="paragraph">Avatar:</p>
+        <img src="" alt="" class="js-img img" />
+        <p class="paragraph">Number of repositories: <span class="js-repo-result normal"></span></p>
+        <p class="paragraph">List of repositories:</p>
+        <ul class="js-list list"></ul>
+      </div>
+    </section>
+  </body>
 </html>
