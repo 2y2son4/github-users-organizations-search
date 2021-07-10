@@ -1,6 +1,6 @@
 # GitHub users' and organizations' browser
 
-Simple browser using GitHubs API.
+Simple browser using GitHub's API.
 
 ### User's profile:
 
