@@ -20,23 +20,36 @@ function getGitHubUser() {
   fetch(`https://api.github.com/users/${userName}`)
     .then((response) => response.json())
     .then((data) => {
-      userElement2.innerHTML = data.login + '.';
-      nameElement2.innerHTML = data.name + '.';
-      locationElement2.innerHTML = data.location + '.';
-      urlElement2.innerHTML = data.html_url;
-      urlElement2.href = data.html_url;
-      urlElement2.target = '_blank';
-      img2.src = data.avatar_url;
-      img2.alt = `${data.name}'s avatar`;
-      bio.innerHTML = data.bio;
-      repoElement2.innerHTML = data.public_repos + '.';
-      followersElement.innerHTML = data.followers + '.';
-      followingElement.innerHTML = data.following + '.';
-      twitter.href = 'https://twitter.com/' + data.twitter_username;
-      twitter.innerHTML = '<i class="fab fa-twitter twitter"></i> ';
-      twitter.innerHTML += '@' + data.twitter_username;
-      console.log(data);
-      // console.log(data.public_repos);
+      if (data.message === 'Not Found') {
+        console.log(data);
+        userElement2.innerHTML = '¯\\_(ツ)_/¯';
+        nameElement2.innerHTML = '¯\\_(ツ)_/¯';
+        locationElement2.innerHTML = '¯\\_(ツ)_/¯';
+        urlElement2.innerHTML = '¯\\_(ツ)_/¯';
+        img2.src = '../images/no-avatar.png';
+        img2.alt = `No such user in GitHub`;
+        bio.innerHTML = '¯\\_(ツ)_/¯';
+        repoElement2.innerHTML = '¯\\_(ツ)_/¯';
+        followersElement.innerHTML = '¯\\_(ツ)_/¯';
+        followingElement.innerHTML = '¯\\_(ツ)_/¯';
+        twitter.innerHTML = '¯\\_(ツ)_/¯';
+      } else {
+        userElement2.innerHTML = data.login + '.';
+        nameElement2.innerHTML = data.name + '.';
+        locationElement2.innerHTML = data.location + '.';
+        urlElement2.innerHTML = data.html_url;
+        urlElement2.href = data.html_url;
+        urlElement2.target = '_blank';
+        img2.src = data.avatar_url;
+        img2.alt = `${data.name}'s avatar`;
+        bio.innerHTML = data.bio;
+        repoElement2.innerHTML = data.public_repos + '.';
+        followersElement.innerHTML = data.followers + '.';
+        followingElement.innerHTML = data.following + '.';
+        twitter.href = 'https://twitter.com/' + data.twitter_username;
+        twitter.innerHTML = '<i class="fab fa-twitter twitter"></i> ';
+        twitter.innerHTML += '@' + data.twitter_username;
+      }
     });
 }
 
